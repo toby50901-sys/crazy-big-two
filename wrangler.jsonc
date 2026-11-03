@@ -1,0 +1,8 @@
+{
+  "name": "crazy-big-two-v40",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "rules": [{"type":"Text","globs":["**/*.html"],"fallthrough":false}],
+  "durable_objects": {"bindings":[{"name":"ROOMS","class_name":"GameRoom"}]},
+  "migrations": [{"tag":"v1","new_sqlite_classes":["GameRoom"]}]
+}
